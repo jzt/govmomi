@@ -34,7 +34,6 @@ load test_helper
 }
 
 @test "ls network" {
-  skip
   run govc ls network
   assert_success
   [ ${#lines[@]} -ge 1 ]
